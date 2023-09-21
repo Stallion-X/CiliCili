@@ -1,3 +1,3 @@
-src/main/webapp/views/css/font-awesome-4.7.0/*.css linguist-vendored
-src/main/webapp/views/css/font-awesome-4.7.0/*.scss linguist-vendored
-src/main/webapp/views/css/font-awesome-4.7.0/*.less linguist-vendored
+src/main/webapp/views/css/font-awesome-4.7.0/css/*.css linguist-vendored
+src/main/webapp/views/css/font-awesome-4.7.0/less/*.scss linguist-vendored
+src/main/webapp/views/css/font-awesome-4.7.0/scss/*.less linguist-vendored
