@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cilicili.DAO.Mapper.FollowMapper">
+    <!--<cache type="org.mybatis.caches.redis.RedisCache"></cache>-->
+    <sql id="Base_Column_List">
+        fid, follower, followed, followtime, deleted
+    </sql>
+    <select id="getFollowingInfo" resultType="UserBean">
+        select uid,nickname,sex,signature,roles,avatar
+        from follow,users
+        where follow.deleted=0 and users.uid=follow.followed and follower=#{follower,jdbcType=BIGINT}
+    </select>
+    <select id="getFollowersInfo" resultType="UserBean">
+        select uid,nickname,sex,signature,roles,avatar
+        from follow,users
+        where follow.deleted=0 and users.uid=follow.follower and followed=#{followed,jdbcType=BIGINT}
+    </select>
+</mapper>

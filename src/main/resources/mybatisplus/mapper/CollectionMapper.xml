@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cilicili.DAO.Mapper.CollectionMapper">
+    <!--<cache type="org.mybatis.caches.redis.RedisCache"></cache>-->
+    <sql id="Base_Column_List">
+        colid, colu, colv, coltime,deleted
+    </sql>
+    <select id="getColInfos" resultType="CollectionBean">
+        select colv,coltime,nickname,vtitle,vimage,vinfo
+        from collection,users,video
+        where colu = #{colu,jdbcType=BIGINT} and colu=uid and colv=vid and collection.deleted=0
+    </select>
+</mapper>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cilicili.DAO.Mapper.VideoMapper">
+    <!--<cache type="org.mybatis.caches.redis.RedisCache"></cache>-->
+    <sql id="Base_Column_List">
+        vid,vtitle,vpart,vinfo,vowner,uptime,vviews,videofile,vlikes,vcoins,vcolnum,vimage,deleted,islocked
+    </sql>
+    <select id="getMaxNum" resultType="Long">
+        select max(vid) from video
+    </select>
+</mapper>
