@@ -10,7 +10,7 @@ Coded as a Spring exercise project.
 
 前端：Vue/jQuery+JSP混合
 
-在视频站基础功能之上加入了Redis +Mybatis二级缓存，接入支付宝，实现了弹幕后端等。
+在视频站基础功能之上加入了Redis +Mybatis二级缓存，接入支付宝，实现了弹幕后端，支持将B站弹幕转换并持久化等。
 
 # Plans
 |  功能   | 是否完成  |
@@ -32,6 +32,7 @@ Coded as a Spring exercise project.
 | 搜索引擎（Elasticsearch等）  | ➖ |
 | 视频喜好推送算法  | ➖ |
 | 历史记录 **加数据库**  | ➖ |
+| B站弹幕持久化  | ✅ |
 | 充会员时间限制  | ➖ |
 | 手机验证码  | ❌ |
 | 回复 简单消息推送  | ➖ |
