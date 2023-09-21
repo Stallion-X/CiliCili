@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%
@@ -112,7 +112,7 @@
             </a>
         </form>
     </div>
-    <div style="display: none;" id="daxiaobuneng"><b style="color: red;">总大小不能超过1g</b></div>
+    <div style="display: none;" id="daxiaobuneng"><b style="color: red;">总大小不能超过16g</b></div>
 </div>
 <script type="text/javascript">
     $("#fanhui").click(function () {
@@ -154,11 +154,11 @@
             //判断图片
             var img = $("#img").val();
             if (img != "") {
-                if (!/\.(gif|jpg|jpeg|png|GIF|JPG|JPEG|PNG|webp)$/.test(img)) {
+                if (!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(img)) {
                     let vm = new Vue({
                         el:"#app",
                         mounted() {
-                            this.$alert('图片类型必须是.gif,jpeg,jpg,png,webp中的一种！', '提醒',{
+                            this.$alert('图片类型必须是.gif,jpeg,jpg,png中的一种！', '提醒',{
                                 confirmButtonText: '确定',
                                 callback: action => {
                                 }
@@ -184,7 +184,7 @@
                 });
                 return false;
             }
-            //判断文件总大小 不能超1g
+            //判断文件总大小 不能超16g
             //用户上传的视频
             var addImags = $("#video").prop('files');
             var fileSize = 0;
@@ -199,7 +199,7 @@
             }
 
             var zonggongdaxiao = fileSize + fileSize2;
-            var Maxzong = 8589934592;
+            var Maxzong = 17179869184;
             if (zonggongdaxiao > Maxzong) {
                 $("#daxiaobuneng").show();
                 let vm = new Vue({

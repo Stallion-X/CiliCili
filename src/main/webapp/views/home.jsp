@@ -723,12 +723,12 @@
                 <div class="line-header">
                     <span class="header-text">动画</span>
                 </div>
-            <div id="owl-slider-1" class="slider-wrapper owl-carousel">
+                <div id="owl-slider-1" class="slider-wrapper owl-carousel">
 
                     <c:forEach items="${animeList}" var="list">
                         <div class="item video-box-wrapper">
                             <div class="img-preview">
-                            <img src="/views/img/cover/${list.vimage}" alt="#">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
                             </div>
                             <div class="video-description-wrapper">
                                 <p class="video-description-header">${list.vtitle }</p>
@@ -743,298 +743,298 @@
                             </div>
                         </div>
                     </c:forEach>
-            </div>
-            </div>
-
-                <div class="content-line content-line-list">
-                    <div class="line-header">
-                        <span class="header-text">番剧</span>
-                    </div>
-                    <div id="owl-slider-2" class="slider-wrapper owl-carousel">
-
-                            <c:forEach items="${fanjuList}" var="list">
-                                <div class="item video-box-wrapper">
-                                <div class="img-preview">
-                                    <img src="/views/img/cover/${list.vimage}" alt="#">
-                                </div>
-                                <div class="video-description-wrapper">
-                                    <p class="video-description-header">${list.vtitle }</p>
-                                    <p class="video-description-subheader">${list.vowner}</p>
-                                    <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                    <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                    <script >
-                                        $('#${list.vid}').click(function(){
-                                            window.parent.frames.location.href="/video/${list.vid}";
-                                        });
-                                    </script>
-                                </div>
-                                </div>
-                            </c:forEach>
-
-                    </div>
                 </div>
+            </div>
 
-                    <div class="content-line content-line-list">
-                        <div class="line-header">
-                            <span class="header-text">音乐</span>
-                        </div>
-                        <div id="owl-slider-3" class="slider-wrapper owl-carousel">
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">番剧</span>
+                </div>
+                <div id="owl-slider-2" class="slider-wrapper owl-carousel">
 
-
-                                <c:forEach items="${musicList}" var="list">
-                                    <div class="item video-box-wrapper">
-                                    <div class="img-preview">
-                                        <img src="/views/img/cover/${list.vimage}" alt="#">
-                                    </div>
-                                    <div class="video-description-wrapper">
-                                        <p class="video-description-header">${list.vtitle }</p>
-                                        <p class="video-description-subheader">${list.vowner}</p>
-                                        <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                        <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                        <script >
-                                            $('#${list.vid}').click(function(){
-                                                window.parent.frames.location.href="/video/${list.vid}";
-                                            });
-                                        </script>
-                                    </div>
-                                    </div>
-                                </c:forEach>
-
-                        </div>
-                    </div>
-
-                        <div class="content-line content-line-list">
-                            <div class="line-header">
-                                <span class="header-text">舞蹈</span>
+                    <c:forEach items="${fanjuList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
                             </div>
-                            <div id="owl-slider-4" class="slider-wrapper owl-carousel">
-
-
-                                    <c:forEach items="${danceList}" var="list">
-                                        <div class="item video-box-wrapper">
-                                        <div class="img-preview">
-                                            <img src="/views/img/cover/${list.vimage}" alt="#">
-                                        </div>
-                                        <div class="video-description-wrapper">
-                                            <p class="video-description-header">${list.vtitle }</p>
-                                            <p class="video-description-subheader">${list.vowner}</p>
-                                            <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                            <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                            <script >
-                                                $('#${list.vid}').click(function(){
-                                                    window.parent.frames.location.href="/video/${list.vid}";
-                                                });
-                                            </script>
-                                        </div>
-                                        </div>
-                                    </c:forEach>
-
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
                             </div>
                         </div>
+                    </c:forEach>
 
-                            <div class="content-line content-line-list">
-                                <div class="line-header">
-                                    <span class="header-text">游戏</span>
-                                </div>
-                                <div id="owl-slider-5" class="slider-wrapper owl-carousel">
+                </div>
+            </div>
+
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">音乐</span>
+                </div>
+                <div id="owl-slider-3" class="slider-wrapper owl-carousel">
 
 
-                                        <c:forEach items="${gameList}" var="list">
-                                            <div class="item video-box-wrapper">
-                                            <div class="img-preview">
-                                                <img src="/views/img/cover/${list.vimage}" alt="#">
-                                            </div>
-                                            <div class="video-description-wrapper">
-                                                <p class="video-description-header">${list.vtitle }</p>
-                                                <p class="video-description-subheader">${list.vowner}</p>
-                                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                <script >
-                                                    $('#${list.vid}').click(function(){
-                                                        window.parent.frames.location.href="/video/${list.vid}";
-                                                    });
-                                                </script>
-                                            </div>
-                                            </div>
-                                        </c:forEach>
-
-                                </div>
+                    <c:forEach items="${musicList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
                             </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
 
-                                <div class="content-line content-line-list">
-                                    <div class="line-header">
-                                        <span class="header-text">科技</span>
-                                    </div>
-                                    <div id="owl-slider-6" class="slider-wrapper owl-carousel">
+                </div>
+            </div>
 
-
-                                            <c:forEach items="${sciList}" var="list">
-                                                <div class="item video-box-wrapper">
-                                                <div class="img-preview">
-                                                    <img src="/views/img/cover/${list.vimage}" alt="#">
-                                                </div>
-                                                <div class="video-description-wrapper">
-                                                    <p class="video-description-header">${list.vtitle }</p>
-                                                    <p class="video-description-subheader">${list.vowner}</p>
-                                                    <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                    <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                    <script >
-                                                        $('#${list.vid}').click(function(){
-                                                            window.parent.frames.location.href="/video/${list.vid}";
-                                                        });
-                                                    </script>
-                                                </div>
-                                                </div>
-                                            </c:forEach>
-
-                                    </div>
-                                </div>
-
-                                    <div class="content-line content-line-list">
-                                        <div class="line-header">
-                                            <span class="header-text">生活</span>
-                                        </div>
-                                        <div id="owl-slider-7" class="slider-wrapper owl-carousel">
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">舞蹈</span>
+                </div>
+                <div id="owl-slider-4" class="slider-wrapper owl-carousel">
 
 
-                                                <c:forEach items="${lifeList}" var="list">
-                                                    <div class="item video-box-wrapper">
-                                                    <div class="img-preview">
-                                                        <img src="/views/img/cover/${list.vimage}" alt="#">
-                                                    </div>
-                                                    <div class="video-description-wrapper">
-                                                        <p class="video-description-header">${list.vtitle }</p>
-                                                        <p class="video-description-subheader">${list.vowner}</p>
-                                                        <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                        <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                        <script >
-                                                            $('#${list.vid}').click(function(){
-                                                                window.parent.frames.location.href="/video/${list.vid}";
-                                                            });
-                                                        </script>
-                                                    </div>
-                                                    </div>
-                                                </c:forEach>
+                    <c:forEach items="${danceList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
 
-                                        </div>
-                                    </div>
+                </div>
+            </div>
 
-                                        <div class="content-line content-line-list">
-                                            <div class="line-header">
-                                                <span class="header-text">鬼畜</span>
-                                            </div>
-                                            <div id="owl-slider-8" class="slider-wrapper owl-carousel">
-
-
-                                                    <c:forEach items="${guichuList}" var="list">
-                                                        <div class="item video-box-wrapper">
-                                                        <div class="img-preview">
-                                                            <img src="/views/img/cover/${list.vimage}" alt="#">
-                                                        </div>
-                                                        <div class="video-description-wrapper">
-                                                            <p class="video-description-header">${list.vtitle }</p>
-                                                            <p class="video-description-subheader">${list.vowner}</p>
-                                                            <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                            <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                            <script >
-                                                                $('#${list.vid}').click(function(){
-                                                                    window.parent.frames.location.href="/video/${list.vid}";
-                                                                });
-                                                            </script>
-                                                        </div>
-                                                        </div>
-                                                    </c:forEach>
-
-                                            </div>
-                                        </div>
-
-                                            <div class="content-line content-line-list">
-                                                <div class="line-header">
-                                                    <span class="header-text">时尚</span>
-                                                </div>
-                                                <div id="owl-slider-9" class="slider-wrapper owl-carousel">
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">游戏</span>
+                </div>
+                <div id="owl-slider-5" class="slider-wrapper owl-carousel">
 
 
-                                                        <c:forEach items="${fashionList}" var="list">
-                                                            <div class="item video-box-wrapper">
-                                                            <div class="img-preview">
-                                                                <img src="/views/img/cover/${list.vimage}" alt="#">
-                                                            </div>
-                                                            <div class="video-description-wrapper">
-                                                                <p class="video-description-header">${list.vtitle }</p>
-                                                                <p class="video-description-subheader">${list.vowner}</p>
-                                                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                                <script >
-                                                                    $('#${list.vid}').click(function(){
-                                                                        window.parent.frames.location.href="/video/${list.vid}";
-                                                                    });
-                                                                </script>
-                                                            </div>
-                                                            </div>
-                                                        </c:forEach>
+                    <c:forEach items="${gameList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
 
-                                                </div>
-                                            </div>
+                </div>
+            </div>
 
-                                                <div class="content-line content-line-list">
-                                                    <div class="line-header">
-                                                        <span class="header-text">娱乐</span>
-                                                    </div>
-                                                    <div id="owl-slider-10" class="slider-wrapper owl-carousel">
-
-
-                                                            <c:forEach items="${entertainmentList}" var="list">
-                                                                <div class="item video-box-wrapper">
-                                                                <div class="img-preview">
-                                                                    <img src="/views/img/cover/${list.vimage}" alt="#">
-                                                                </div>
-                                                                <div class="video-description-wrapper">
-                                                                    <p class="video-description-header">${list.vtitle }</p>
-                                                                    <p class="video-description-subheader">${list.vowner}</p>
-                                                                    <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                                    <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                                    <script >
-                                                                        $('#${list.vid}').click(function(){
-                                                                            window.parent.frames.location.href="/video/${list.vid}";
-                                                                        });
-                                                                    </script>
-                                                                </div>
-                                                                </div>
-                                                            </c:forEach>
-
-                                                    </div>
-                                                </div>
-
-                                                    <div class="content-line content-line-list">
-                                                        <div class="line-header">
-                                                            <span class="header-text">影视</span>
-                                                        </div>
-                                                        <div id="owl-slider-11" class="slider-wrapper owl-carousel">
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">科技</span>
+                </div>
+                <div id="owl-slider-6" class="slider-wrapper owl-carousel">
 
 
-                                                                <c:forEach items="${moviesList}" var="list">
-                                                                    <div class="item video-box-wrapper">
-                                                                    <div class="img-preview">
-                                                                        <img src="/views/img/cover/${list.vimage}" alt="#">
-                                                                    </div>
-                                                                    <div class="video-description-wrapper">
-                                                                        <p class="video-description-header">${list.vtitle }</p>
-                                                                        <p class="video-description-subheader">${list.vowner}</p>
-                                                                        <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
-                                                                        <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
-                                                                        <script >
-                                                                            $('#${list.vid}').click(function(){
-                                                                                window.parent.frames.location.href="/video/${list.vid}";
-                                                                            });
-                                                                        </script>
-                                                                    </div>
-                                                                    </div>
-                                                                </c:forEach>
+                    <c:forEach items="${sciList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
 
-                                                        </div>
+                </div>
+            </div>
+
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">生活</span>
+                </div>
+                <div id="owl-slider-7" class="slider-wrapper owl-carousel">
+
+
+                    <c:forEach items="${lifeList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
+
+                </div>
+            </div>
+
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">鬼畜</span>
+                </div>
+                <div id="owl-slider-8" class="slider-wrapper owl-carousel">
+
+
+                    <c:forEach items="${guichuList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
+
+                </div>
+            </div>
+
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">时尚</span>
+                </div>
+                <div id="owl-slider-9" class="slider-wrapper owl-carousel">
+
+
+                    <c:forEach items="${fashionList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
+
+                </div>
+            </div>
+
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">娱乐</span>
+                </div>
+                <div id="owl-slider-10" class="slider-wrapper owl-carousel">
+
+
+                    <c:forEach items="${entertainmentList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
+
+                </div>
+            </div>
+
+            <div class="content-line content-line-list">
+                <div class="line-header">
+                    <span class="header-text">影视</span>
+                </div>
+                <div id="owl-slider-11" class="slider-wrapper owl-carousel">
+
+
+                    <c:forEach items="${moviesList}" var="list">
+                        <div class="item video-box-wrapper">
+                            <div class="img-preview">
+                                <img src="/views/img/cover/${list.vimage}" alt="#">
+                            </div>
+                            <div class="video-description-wrapper">
+                                <p class="video-description-header">${list.vtitle }</p>
+                                <p class="video-description-subheader">${list.vowner}</p>
+                                <p class="video-description-info">播放量：${list.vviews}<span>时间${list.uptime}</span></p>
+                                <a style="cursor: pointer;"  class="btn-play" id="${list.vid}"></a>
+                                <script >
+                                    $('#${list.vid}').click(function(){
+                                        window.parent.frames.location.href="/video/${list.vid}";
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </c:forEach>
+
+                </div>
+            </div>
         </div>
-    </div>
 <%--    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>--%>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
     <script id="rendered-js" >

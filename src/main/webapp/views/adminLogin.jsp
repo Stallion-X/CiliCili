@@ -13,8 +13,7 @@
         href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png"/>
   <link rel="mask-icon" type="image/x-icon"
         href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"/>
-<%--  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">--%>
-<%--  <link rel="stylesheet" href="/views/css/fontawesome-free-6.4.0-web/css/all.css">--%>
+<%--  <link rel="stylesheet" href="/views/css/fontawesome-free-6.4.0-web/css/all.css" type="text/css"/>--%>
   <link rel="stylesheet" href="/views/css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>

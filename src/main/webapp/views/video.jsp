@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="/views/css/font/iconfont.css">
     <link rel="shortcut icon" href="/views/img/favicon.ico">
     <title>${videoEntity.vtitle}_CiliCili-视频播放</title>
-    <%--<script
-            src="/views/js/bluebird.min.js"></script>--%>
+    <script
+            src="/views/js/bluebird.min.js"></script>
     <script type="text/javascript">
         function isIE() {
             if (!!window.ActiveXObject || "ActiveXObject" in window) {
@@ -732,7 +732,7 @@
 <body>
 <iframe scrolling="no" style="border: medium none; margin:0; padding:0;" src="/views/navigation.jsp" width="100%" height="5%" name="topframe"></iframe>
 <div id="app"></div>
-<%--<script type="text/javascript">
+<script type="text/javascript">
     function isIE() {
         if (!!window.ActiveXObject || "ActiveXObject" in window) {
             return true;
@@ -748,7 +748,7 @@
         document.getElementsByTagName('head')[0].appendChild(script);
     }
 
-</script>--%>
+</script>
 
 
 <script src="/views/js/DPlayer.min.js"></script>
@@ -1749,47 +1749,6 @@
             .join(":")
             .replace(/\b(\d)\b/g, "0$1");
     }
-
-    // function loaddanmu() {
-    //     $.ajax({
-    //         url: "/v3",
-    //         type: 'GET',
-    //         data: {'id': '${vid}'},
-    //         success: function (data) {
-    //             var obj = JSON.parse(data);
-    //             //alert(obj.data)
-    //             if (obj.code == 0) {
-    //                 var danmaku = obj.data;
-    //                 //ddd=obj.data;
-    //                 //console.log(dd)
-    //                 var autor = "普通用户";
-    //                 $(".danmuku_num").text(danmaku.length);
-    //                 $('#dmnum').html(danmaku.length);
-    //                 //有空改成懒加载
-    //                 $(danmaku).each(function (index, item) {
-    //                     //console.log(item)
-    //                     if (item[1]) {
-    //                     } else {
-    //                         autor = "普通用户"
-    //                     }
-    //                     var oLi = '<ol class="danmuku_list" time="'+item[0]+'"><li>' + formatTime(item[0]) + '</li><li title="' + item[4] + '">' + item[4] + '</li><li>' + autor + '</li></ol>';
-    //                     $(".list_ovefiow").append(oLi);
-    //                     autor = "普通用户";
-    //                 });
-    //             } else {
-    //                 alert_back("弹幕加载失败 -v-!");
-    //             }
-    //             $(".danmuku_list").click(function () {
-    //
-    //                 dp.seek($(this).attr("time"))
-    //             });
-    //         }
-    //     });
-    // }
-    // function freshdanmu() {
-    //     $(".list_ovefiow").html('');
-    //     loaddanmu();
-    // }
 
     var danmaku;
     function loaddanmu() {

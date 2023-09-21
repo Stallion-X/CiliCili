@@ -3,6 +3,7 @@ mybatis-plus:
   configuration:
     cache-enabled: true
     map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
   type-aliases-package: com.cilicili.Beans
 spring.datasource:
   type: com.alibaba.druid.pool.DruidDataSource
@@ -21,3 +22,12 @@ spring:
   sql:
     init:
       platform: mysql
+server:
+  ssl:
+    key-store: classpath:cert.p12 # 证书存放的位置
+    key-store-type: PKCS12 # P12证书格式
+    key-store-password:
+    enabled: true
+logging:
+  level:
+    com.cilicili.DAO.Mapper: debug
