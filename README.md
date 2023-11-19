@@ -43,3 +43,4 @@ Coded as a Spring exercise project.
 | 即时私信聊天(ws) **加数据库**  | ➖ |
 | 前后端分离重构  | ➖ |
 | 分库分表中间件  | ➖ |
+| 采用OSS图床、CDN等  | ➖ |
